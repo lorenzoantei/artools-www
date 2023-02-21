@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Artools</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- #212121 -->
+    <style>
+        .fade-in-1 {
+            opacity: 0;
+            animation: fade-in 5s forwards;
+            animation-delay: .3s;
+            }
+
+            @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fade-in-2 {
+            opacity: 0;
+            animation: fade-in 5s forwards;
+            animation-delay: 1s;
+            }
+
+            @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fade-in-3 {
+            opacity: 0;
+            animation: fade-in 5s forwards;
+            animation-delay: 2s;
+            }
+
+            @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        body {
+            background-color: #212121;
+        }
+
+    </style>
 </head>
 <body>
-    Artools
+    <div class="w-screen flex justify-center pb-24">
+        <div class="flex flex-col space-y-8 md:space-y-12 pl-12 md:my-24 pt-20">
+            <h1 class="text-gray-200 italic text-7xl md:mx-48 fade-in-1">Artools</h1>
+            <h2 class="text-white mx-12 text-xl pt-8 md:mx-56 fade-in-2">Ideato da Songlines Production / DIEA con la collaborazione dell’Accademia di Belle Arti di Firenze.</h2>
+            <p class="text-white md:pt-12 mx-12 text-xl md:mx-56 fade-in-3">Un progetto promosso da alcuni dei principali istituti d’arte italiani ed internazionali che coinvolge e aggrega studenti e docenti nella creazione e nella disseminazione di contenuti legati al mondo dell’arte. Gli obiettivi principali di ArTools sono l’alta formazione e la condivisione multiculturale delle discipline artistiche su scala globale.</p>
+        </div>
+    </div>
+    
 </body>
 </html>
