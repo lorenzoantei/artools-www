@@ -29,7 +29,7 @@
             opacity: 0;
             animation: fade-in 5s forwards;
             animation-delay: 1s;
-            }
+        }
 
             @keyframes fade-in {
             0% {
@@ -58,17 +58,105 @@
         body {
             background-color: #212121;
         }
+        h1, h2, nav {
+            font-family: 'Montserrat', sans-serif;
+        }
 
+        #hero {
+            background-image: url("hero4.png");
+            background-opacity: 0.7;
+            background-color: #000000; /* Used if the image is unavailable */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+        }
+        
+
+        
     </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- https://fonts.google.com/specimen/Montserrat -->
 </head>
+
 <body>
-    <div class="w-screen flex justify-center pb-24">
-        <div class="flex flex-col space-y-8 md:space-y-12 pl-12 md:my-24 pt-20">
-            <h1 class="text-gray-200 italic text-7xl md:mx-48 fade-in-1">Artools</h1>
-            <h2 class="text-white mx-12 text-xl pt-8 md:mx-56 fade-in-2">Ideato da <a class="hover:underline hover:text-red-500" href="https://www.songlinesproduction.com/">Songlines Production</a> / <a class="hover:underline hover:text-red-500" href="http://www.diea.info/">DIEA</a> con la collaborazione dell’<a class="hover:underline hover:text-red-500" href="https://www.accademia.firenze.it/it/">Accademia di Belle Arti di Firenze</a>.</h2>
-            <p class="text-white md:pt-12 mx-12 text-xl md:mx-56 fade-in-3">Un progetto promosso da alcuni dei principali istituti d’arte italiani ed internazionali che coinvolge e aggrega studenti e docenti nella creazione e nella disseminazione di contenuti legati al mondo dell’arte. Gli obiettivi principali di ArTools sono l’alta formazione e la condivisione multiculturale delle discipline artistiche su scala globale.</p>
+    <!-- <nav class="bg-red-900 bg-opacity-20 py-10 w-screen text-xl text-white uppercase">
+            
+        <div class="flex justify-around">
+            <a href="#" class="no-underline hover:underline">artools</a>
+            
+            <div class="space-x-6"  
+            <a href="" class="no-underline hover:underline">partner</a>
+                <a href="" class="no-underline hover:underline">protagonisti</a>
+                <a href="" class="no-underline hover:underline">produzione</a>
+                <a href="" class="no-underline hover:underline">riferimento</a>
+                <a href="" class="no-underline hover:underline">note</a>
+                <a href="" class="no-underline hover:underline">referenze</a>
+            </div>
+        </div>
+    </nav> -->  
+
+    <div class="w-screen flex md:justify-center">
+        <div class="flex flex-col md:space-y-48 space-y-20 md:my-18 pb-36">
+
+            <section data-aos="fade-in" data-aos-duration="1000" id="hero" class="w-screen h-screen flex justify-center items-center">
+                <div class="flex items-center">
+                    <div class="flex flex-col md:-mt-52">
+                        <h1 class="text-black italic md:text-8xl text-4xl md:mx-48 mx-8 uppercase">Artools</h1>
+                        <h3 class="text-white  text-xl pt-8 md:mx-56 mx-12 -mt-6">Ideato da <a class="hover:underline hover:text-white" href="https://www.songlinesproduction.com/">Songlines Production</a> & <a class="hover:underline hover:text-white" href="http://www.diea.info/">DIEA</a> con la collaborazione dell’<a class="hover:underline hover:text-white" href="https://www.accademia.firenze.it/it/">Accademia di Belle Arti di Firenze</a>.</h3>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section data-aos="fade-in" data-aos-duration="1000" id="progetto" class="space-y-12 ">
+                <h2 class="text-gray-200 italic md:text-6xl text-3xl md:mx-48 ml-8 uppercase ">Il progetto</h2>
+
+                <p data-aos="fade-in" data-aos-duration="1000" class="text-white text-xl md:mx-72 mx-8">ARTOOLS (artools.academy) è un progetto promosso da alcuni dei principali istituti d’arte italiani e stranieri che coinvolge e aggrega studenti e docenti nella creazione e nella disseminazione di contenuti legati al mondo dell’arte. Gli obiettivi principali di ArTools sono l’alta formazione e la condivisione multiculturale delle discipline artistiche su scala internazionale.</p>
+            </section>
+            
+            
+            <section id="masterclass" data-aos="fade-in" data-aos-duration="1000" class="space-y-12 ">
+
+                <h2 class="text-gray-200 italic md:text-6xl text-3xl md:mx-48 mx-8 uppercase">masterclass</h2>
+                <p class="text-white text-xl md:mx-72 mx-8">Masterclass è il primo progetto editoriale audiovisivo realizzato da Artools. Il format prevede la produzione di una serie di lezioni magistrali presso alcune dei principali istituti d’arte che aderiscono al consorzio. La prima serie è ambientata nelle accademie di Firenze e Carrara ed ha per protagonisti artisti di ispirazione pop legati al mondo del Lucca Comics and Games Festival.</p>
+            
+            </section>
+            
+            <section class="space-y-12 bg-black md:min-h-screen py-24" data-aos="fade-in" data-aos-duration="1000">
+
+                <h2 class="text-gray-200 italic md:text-6xl text-3xl md:mx-48 mx-8 uppercase">I protagonisti</h2>
+                <p class="text-white mx-12 text-xl md:mx-72 mx-8"> I vari maestri saranno scelti tra i più rappresentativi e qualificati per ogni disciplina artistica, per offrire agli utenti un'esperienza di apprendimento stimolante e di alta qualità.</p>
+                <h2 class="text-gray-200 italic md:text-4xl text-2xl md:mx-48 mx-8 uppercase">Pilota - Gary Frank</h2>
+                <div class="md:hidden flex justify-center">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/617827055?h=6b57026913" width="300" height="300" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class=" hidden md:flex justify-center">
+                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/617827055?h=6b57026913" width="1280" height="720" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+            </section>
+
+            <section id="reference" class="space-y-12" data-aos="fade-in" data-aos-duration="1000">
+                <h2 class="text-gray-200 italic md:text-6xl text-3xl md:mx-48 mx-8 uppercase">CONTATTI</h2>
+                <div class="text-white text-xl md:mx-72 mx-12 flex flex-row items-center space-x-12">
+
+                    <img class="w-1/12" src="songlines_logo_txt.svg">artools@songlines.com</a>
+                </div>
+                    
+                
+            </section>
+
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     
 </body>
+
 </html>
